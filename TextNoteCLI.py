@@ -12,6 +12,7 @@ def userNameWrite ():
 def userNameRead ():
     with open("UserName.txt" , "r") as userfile :
         user_list = userfile.read()
+        print()
         print(user_list)
         total_users = user_list.splitlines()
         print(f"Total Notes: {len(total_users)}")
@@ -30,6 +31,11 @@ while True:
     elif option == '3' :
         print("Goodbye!")
         sys.exit()
+    else:    
+        print("\nyou selected invalid options, Try Again!")
+        
+
+
 
 
 
